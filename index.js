@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-  res.send('Hello new node start!')
+  res.send('Hello new node start here!')
 })
 
 client.connect(err => {
