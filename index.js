@@ -20,13 +20,6 @@ app.get('/', (req, res) => {
 client.connect(err => {
   const hotelCollection = client.db("royal-guest").collection("homeInfo");
 
-  //   app.post('/product', (req, res) => {
-//       const product = req.body;
-//       collection.insertOne(product);
-//       then(result => {
-//           res.send(result.insertedCount > 0)
-//       })
-//   })
   app.get('/hotelInfo', (req, res) => {
     hotelCollection.find({})
       .toArray((err, documents) => {
